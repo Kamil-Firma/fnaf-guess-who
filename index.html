@@ -1,0 +1,91 @@
+<html>
+<head>
+	<title>fnaf!</title>
+	<style>
+		body {
+			background-color: black;
+			background-image: url('bg.png');
+			color: white;
+		}
+		
+		#board {
+			display: flex;
+			flex-wrap: wrap; 
+		}
+		
+		.char {
+			margin: 4px;
+			border: 1px white solid;
+		}
+		.charimg {
+			width: 90px;
+			opacity: 80%;
+		}
+		.charimg:hover {
+			cursor: pointer;
+			opacity: 100%;
+		}
+		.out {
+			opacity: 20%;
+			filter: invert(1);
+		}
+		
+		#your {
+			font-size: 4em;
+		}
+		#your img{
+			border: 1px white solid;
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+
+<div id='your'></div>
+<div id='board'></div>
+
+<script src='characterlist.js'> </script>
+<script>
+	time = 0;
+	mycharacter = 0;
+	function frame(){
+		time ++;
+		var frame_timeout = setTimeout(frame, 1);
+	}
+	frame();
+	function random_range(min, max){
+		return Math.round(Math.random() * (max - min) + min);
+	}
+
+	function loadboard(){
+		var mboard = "";
+		for(i=0; i<characters.length; i++){
+			var myid = i.toString();
+			mboard += "<div class='char' id='char" + myid + "' onclick='clicked(" + myid + ")'>";
+			mboard += "<img class='charimg' src='characters/" + characters[i] + "'>";
+			mboard += "</div>";
+		}
+		document.getElementById('board').innerHTML = mboard;
+	}
+	loadboard();
+	
+	function clicked(id){
+		var myguy = document.getElementById('char'+id.toString());
+		var is_out = myguy.classList.contains('out');
+		if( is_out ){
+			myguy.classList.remove("out");
+		}else{
+			myguy.classList.add("out");
+		}
+	}
+	
+	function your(){
+		mycharacter = random_range(0, characters.length);
+		var result = "YOUR CHARACTER: ";
+		result += "<img src='characters/" + characters[mycharacter] + "'>";
+		document.getElementById('your').innerHTML = result;
+	}
+	your();
+</script>
+</body>
+</html>
