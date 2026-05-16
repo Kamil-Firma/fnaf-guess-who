@@ -70,4 +70,6 @@ characters = [
 	"Candy Cadet.png",
 	//ucn
 	"Fredbear.png",
+	//sb
+	"Glamrock Freddy.png",
 ]
