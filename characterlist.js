@@ -37,6 +37,7 @@ characters = [
 	"Nightmare Freddy.png",
 	"Nightmare Bonnie.png",
 	"Nightmare Chica.png",
+	"Nightmare Foxy.png",
 	"Nightmare Fredbear.png",
 	"Plushtrap.png",
 	"Nightmare.png",
