@@ -41,6 +41,7 @@
 </head>
 <body>
 
+<audio controls loop style='position:absolute; right:30px;'><source src='music.mp3'></audio>
 <div id='your'></div>
 <div id='board'></div>
 
@@ -61,7 +62,8 @@
 		var mboard = "";
 		for(i=0; i<characters.length; i++){
 			var myid = i.toString();
-			mboard += "<div class='char' id='char" + myid + "' onclick='clicked(" + myid + ")'>";
+			var myname = characters[i].substring(0, characters[i].length-4);
+			mboard += "<div title='" + myname + "' class='char' id='char" + myid + "' onclick='clicked(" + myid + ")'>";
 			mboard += "<img class='charimg' src='characters/" + characters[i] + "'>";
 			mboard += "</div>";
 		}
