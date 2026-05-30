@@ -48,6 +48,7 @@ characters = [
 	"Nightmare BB.png",
 	"Nightmarionne.png",
 	//fw
+	"Anchovy.png",
 	"Adventure Endo01.png",
 	"Dee Dee.png",
 	"Old Man Consequences.png",
@@ -103,6 +104,8 @@ characters = [
 	//ar
 	"Freddy Frostbear.png",
 	"8-Bit Baby.png",
+	"System Error Toy Bonnie.png",
+	"Liberty Chica.png",
 	//sb
 	"Glamrock Freddy.png",
 	"Montgomery Gator.png",
@@ -115,6 +118,10 @@ characters = [
 	"Security Bot.png",
 	"Caution Bot.png",
 	"Glamrock Endo.png",
+	"Shattered Freddy.png",
+	"Shattered Monty.png",
+	"Shattered Chica.png",
+	"Shattered Roxy.png",
 	"Gregory.png",
 	"Vanny.png",
 	"Burntrap.png",
@@ -123,6 +130,10 @@ characters = [
 	"The Mimic.png",
 	"MXES.png",
 	"Helpi.png",
+	"Ruined Freddy.png",
+	"Ruined Monty.png",
+	"Ruined Chica.png",
+	"Ruined Roxy.png",
 	"Glamrock Bonnie.png",
 	//hw2
 	"Mystic Hippo.png",
